@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors Game Challenge</title>
+</head>
+<body style="font-size:18px;">
+  <h1>Rock-Paper-Scissors Game Challenge</h1><hr/>
+  <form>
+    <p>Select an option to play:</p>
+    <select id="mySelect" style="padding: 10px 20px;">
+      <option value="">Select an option to play</option>
+      <option value="Rock">Rock</option>
+      <option value="Paper">Paper</option>
+      <option value="Scissors">Scissors</option>
+    </select>
+  </form><br/>
+  <div id="completed"></div>
+
+  <button type="button" style="padding: 10px 20px;" onclick="compareInput()">Play</button>
+  <div class="">
+    <p>Rock: wins against Scissors, loses to Paper, and ties against itself.</p>
+    <p>Paper: wins against Rock, loses to Scissors, and ties against itself.</p>
+    <p>Scissors: wins against Paper, loses to Rock, and ties against itself.</p>
+  </div>
+  <div id="gameError"></div>
+  <div id="myScores"></div>
+  <div id="autoplayerScores"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
